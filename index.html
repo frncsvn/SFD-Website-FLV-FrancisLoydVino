@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FLV</title>
+	<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=Poppins:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<style>
+	body {
+	color: lightgray;	
+	background-color: #262525;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	margin:7% 13%;
+	font-family: 'Poppins', sans-serif;
+	font-size: 20px;
+	}
+	body img {
+		margin: 0;
+		width: 50%;
+		margin-right: 0px;
+		text-align: right;
+	}
+	.transition {
+		animation: slideleft 2s linear forwards;	
+	}
+	@keyframes slideleft {
+		0%{
+			transform: translate(100px);
+			opacity: 0;
+		}
+		100%{
+			transform: translate(0px);
+			opacity: 1;
+		}
+	}
+	button {
+		overflow: hidden;
+		padding: 10px;
+		border-radius: 40px;
+		border-style: hidden;
+		box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+	button a {
+		font-family: 'Poppins', sans-serif;
+		font-size: 25px;
+		color: #262525;
+		text-decoration: none;
+		padding: 20px;
+
+	}
+	button a:hover {
+		color: white;
+	}
+	button::after {
+		content: "";
+		width: 400px;
+		height: 400px;
+		position: absolute;
+		top: -50px;
+		left: -100px;
+		background-color: #ff3cac;
+		background-image: linear-gradient(
+			224deg,
+			#F4BC1C 0%,
+			#F4BC1C 50%,
+			#c625d0 100%
+		);
+		z-index: -1;
+		transition: transform 0.5s ease;
+		}
+		button:hover {
+			transform: translate(0, -6px);
+			box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5) -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+		}
+		button:hover::after {
+			transform: rotate(150deg);
+		}
+		.medias {
+			margin-top: 13%;
+		}
+		.medias a i{
+			font-size: 30px;
+			padding-right: 20px;
+			color: lightgray;
+			transition: 0.4s;
+		}
+		.medias a i:hover {
+			color: #F4BC1C;
+			transform: scale(1.2);
+		}
+	
+
+	</style>
+	<div id="firstpage.html">
+		<img src="img/pic1.png" align="right">
+		<h1 class="transition"><br><br>Meet Francis.</h1>
+		<p class="transition">Francis has an innate vision to learn, grow,<br>and one day succeed in life.</p>
+		<button class="transition"><a href="2ndPage.html">Get Going</button>	
+		<div class="medias">
+			<a href="https://www.facebook.com/flvinonovi" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.instagram.com/flvinonovi/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+			<a href="https://twitter.com/flvinonovi" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+			<a href="https://www.youtube.com/channel/UCFiYQj1_FJzYOwDgRpcUKGA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+		</div>		
+	
+			
+	</div>
+
+</body>
+</html>
